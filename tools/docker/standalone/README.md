@@ -20,10 +20,10 @@ To start an OceanBase instance, run this command:
 
 ```bash
 # deploy an instance of the largest size according to the current container
-docker run -p 2881:2881 --name obstandalone -d oceanbase/oceanbase-ce-standalone
+docker run -p 2881:2881 --name obstandalone -d oceanbase/oceanbase-ce
 
 # deploy mini standalone instance
-docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce-standalone
+docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
 ```
 
 Two to five minutes are necessary for the boot procedure. To make sure that the boot procedure is successful, run this command:
