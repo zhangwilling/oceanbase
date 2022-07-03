@@ -20,10 +20,10 @@
 
 ```bash
 # 根据当前容器情况部署最大规格的实例
-docker run -p 2881:2881 --name obstandalone -d oceanbase/oceanbase-ce-standalone
+docker run -p 2881:2881 --name obstandalone -d oceanbase/oceanbase-ce
 
 # 部署最小规格实例
-docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce-standalone
+docker run -p 2881:2881 --name obstandalone -e MINI_MODE=1 -d oceanbase/oceanbase-ce
 ```
 
 启动预计需要 2-5 分钟。执行以下命令，如果返回 `boot success!`，则启动成功。
